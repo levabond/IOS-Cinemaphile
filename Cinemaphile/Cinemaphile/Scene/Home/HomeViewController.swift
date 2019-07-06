@@ -42,7 +42,6 @@ class HomeViewController: ASViewController<ASDisplayNode>, ASTableDataSource, AS
     return node as! ASTableNode
   }
   
-  
   init() {
     super.init(node: ASTableNode())
     tableNode.delegate = self
