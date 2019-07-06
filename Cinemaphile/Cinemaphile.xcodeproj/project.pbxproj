@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25196B1122D0A82D006907E6 /* CinemaNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25196B1022D0A82D006907E6 /* CinemaNodes.swift */; };
 		256F8514223511BA0044B676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256F8513223511BA0044B676 /* AppDelegate.swift */; };
 		256F851C223511BA0044B676 /* Cinemaphile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 256F851A223511BA0044B676 /* Cinemaphile.xcdatamodeld */; };
 		256F851E223511BB0044B676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256F851D223511BB0044B676 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		1CD38356DDF68535D216FEC6 /* Pods-Cinemaphile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinemaphile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cinemaphile/Pods-Cinemaphile.debug.xcconfig"; sourceTree = "<group>"; };
+		25196B1022D0A82D006907E6 /* CinemaNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaNodes.swift; sourceTree = "<group>"; };
 		256F8510223511BA0044B676 /* Cinemaphile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinemaphile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		256F8513223511BA0044B676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		256F851B223511BA0044B676 /* Cinemaphile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cinemaphile.xcdatamodel; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25196B0F22D0A81E006907E6 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				25196B1022D0A82D006907E6 /* CinemaNodes.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
 		256F8507223511BA0044B676 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		256F852B22353BF80044B676 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				25196B0F22D0A81E006907E6 /* Nodes */,
 				256F852C22353C0A0044B676 /* HomePresenter.swift */,
 				256F852D22353C0A0044B676 /* HomeWorker.swift */,
 				256F852E22353C0A0044B676 /* HomeRouter.swift */,
@@ -212,24 +223,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Cinemaphile/Pods-Cinemaphile-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Cinemaphile/Pods-Cinemaphile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Cinemaphile/Pods-Cinemaphile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cinemaphile/Pods-Cinemaphile-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cinemaphile/Pods-Cinemaphile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A387719D18363B18021CC2D0 /* [CP] Check Pods Manifest.lock */ = {
@@ -269,6 +271,7 @@
 				256F853622353C0A0044B676 /* HomeModels.swift in Sources */,
 				256F853922353C0A0044B676 /* HomeConfigurator.swift in Sources */,
 				256F853722353C0A0044B676 /* HomeViewController.swift in Sources */,
+				25196B1122D0A82D006907E6 /* CinemaNodes.swift in Sources */,
 				256F853522353C0A0044B676 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 766XU9HKGX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Cinemaphile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -428,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 766XU9HKGX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Cinemaphile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

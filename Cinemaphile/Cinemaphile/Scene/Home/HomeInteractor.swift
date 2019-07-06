@@ -10,11 +10,11 @@ import UIKit
 import RxSwift
 
 protocol HomeInteractorInput: class {
-  var somethingSubject: PublishSubject<Home.Something.Request> { get }
+//  var somethingSubject: PublishSubject<Home.Something.Request> { get }
 }
 
 protocol HomeInteractorOutput {
-  var somethingSubject: PublishSubject<Home.Something.Response> { get }
+//  var somethingSubject: PublishSubject<Home.Something.Response> { get }
 }
 
 protocol HomeDataStore {
@@ -24,7 +24,7 @@ protocol HomeDataStore {
 class HomeInteractor: HomeInteractorOutput, HomeDataStore {
   weak var input: HomeInteractorInput! {
     didSet {
-      input.somethingSubject.map(handleUseCase).bind(to: somethingSubject).disposed(by: disposeBag)
+//      input.somethingSubject.map(handleUseCase).bind(to: somethingSubject).disposed(by: disposeBag)
     }
   }
   var somethingSubject = PublishSubject<Home.Something.Request>()
