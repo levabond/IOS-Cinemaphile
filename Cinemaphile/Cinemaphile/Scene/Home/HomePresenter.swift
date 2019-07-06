@@ -10,17 +10,17 @@ import UIKit
 import RxSwift
 
 protocol HomePresenterInput: class {
-  var somethingSubject: PublishSubject<Home.Something.Response> { get }
+//  var somethingSubject: PublishSubject<Home.Something.Response> { get }
 }
 
 protocol HomePresenterOutput {
-  var somethingSubject: PublishSubject<Home.Something.ViewModel> { get }
+//  var somethingSubject: PublishSubject<Home.Something.ViewModel> { get }
 }
 
 class HomePresenter: HomePresenterOutput {
   weak var input: HomePresenterInput! {
     didSet {
-      input.somethingSubject.map(handle).bind(to: somethingSubject).disposed(by: disposeBag)
+//      input.somethingSubject.map(handle).bind(to: somethingSubject).disposed(by: disposeBag)
     }
   }
   var somethingSubject = PublishSubject<Home.Something.ViewModel>()
